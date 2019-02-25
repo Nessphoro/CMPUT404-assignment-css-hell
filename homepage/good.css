@@ -1,0 +1,323 @@
+
+/* Reset From my website at malynin.ca
+/* ---------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* END RESET */
+
+body {
+    overflow-x: hidden;
+    color: color(var(--midgrey) l(-25%));
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    background: #fff;
+    min-height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    font-feature-settings: "liga" on;
+}
+
+
+body > header {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 7em auto 7em;
+    grid-template-areas: ". . ."
+                         ". herotext ."
+                         ". . .";
+    background: url("./bg.jpg") no-repeat 50%;
+    padding: 3em;
+    position: relative;
+} 
+body > header > div {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.18)
+}
+
+body > header section {
+    grid-area: herotext;
+    color: white;
+    text-rendering: optimizeLegibility;
+    z-index: 10;
+    font-size: 100%;
+    text-align: center;
+}
+
+body > header h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+body > header h2 {
+    padding-top: 0.25em;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+#sidebar {
+    position: absolute;
+    right: 2em;
+    width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+
+    margin-top: -93px;
+    z-index: 1;
+    background: white;
+}
+
+#sidebar > h3 {
+    margin-top: 1em;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#sidebar > summary {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2rem;
+    opacity: 0.7;
+}
+
+main {
+    display: block;
+    position: relative;
+    z-index: 1;
+
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -100px;
+    padding-top: 0px;
+}
+
+main nav {
+    display: block;
+    position: relative;
+    top: -2em;
+}
+
+main nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+}
+
+main nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#about {
+    margin-top: -2rem;
+}
+
+main > section {
+    margin-top: 1em;
+    clear: both;
+    border-radius: 5px;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    min-height: 300px;
+    background: #FFF;
+    color: #15171a;
+    padding: 25px 25px 0;
+    padding-bottom: 1em;
+}
+
+main > section p {
+    margin-top: 1rem;
+    font-size: 15px;
+    line-height: 1.2rem;
+}
+
+hr {
+    clear: both;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+main > section > h3 {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.history {
+    min-height: 150px;
+    display: flex;
+}
+
+.logo-left {
+    margin-right: 1em;
+    width: 150px;
+}
+
+.logo-right {
+    margin-left: 1em;
+    width: 150px;
+}
+
+.history ul {
+    margin-top: 1em;
+    list-style: inside;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.techlist {
+    list-style: inside;
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    opacity: 0.6;
+}
+
+footer {
+    margin-top: 3em;
+    background: #15171a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1em auto 1em;
+    grid-template-areas: ". . ."
+                         ". center ."
+                         ". . .";
+}
+
+footer > h5 {
+    color: white;
+    grid-area: center;
+}

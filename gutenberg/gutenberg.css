@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Cloister Black";
+    src: url("./CloisterBlack.ttf");
+}
+
+@font-face {
+    font-family: "1726 Real Espanola";
+    src: url("./1726.ttf");
+}
+
+@font-face {
+    font-family: "Hoefler Text Ornaments";
+    src: url("./Hoefler\ Text\ Ornaments.ttf");
+}
+
+body {
+    background-color: rgb(241, 233, 210);
+    font-family: "1726 Real Espanola";
+    font-size: 1.5em;
+}
+
+blockquote {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font-family: "Hoefler Text Ornaments";
+    overflow: hidden;
+    padding-bottom: 0.5em;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    text-align: center;
+    font-family: "Hoefler Text Ornaments";
+    overflow: hidden;
+    padding-top: 0.5em;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Cloister Black";
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+body > p:first-letter {
+    color: rgb(89, 8, 30);
+    margin-top: 0.1em;
+    padding-right: 0.05em;
+    font-size: 4.5em;
+    float: left;
+    line-height: 1em;
+    font-family: "Cloister Black";
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > p {
+    text-align: justify;
+    clear: both;
+    margin-top: 2.2em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+body > pre {
+    margin-top: 2em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+}
+
+.image-center::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font-family: "Hoefler Text Ornaments";
+    overflow: hidden;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+}
+
+.image-center::after {
+    content: "";
+    display: block;
+    text-align: center;
+    font-family: "Hoefler Text Ornaments";
+    overflow: hidden;
+    padding-top: 0.5em;
+    font-size: 2em;
+}
+
+hr {
+    visibility: hidden;
+}

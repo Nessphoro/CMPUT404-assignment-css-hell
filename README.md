@@ -1,24 +1,18 @@
-Assignment: CSS Hell
-====================
+# Modifications
 
-You will skin 3 project gutenberg stories with custom CSS.
+Only minor modifications were made, mostly adding the link rel for stylesheets
+and normalizing the h1 / h2 headers for titles and "by author" fields. 
+As well say removing some stange html tags like `big`.
+Image src was modified to be absolute to the Project Gutenberg site.
 
-You will skin 2 versions of a possible professional homepage for your
-self with 2 versions of CSS.
+# Fonts
+For the Project Gutenberg stuff
+I took the fonts off of my Mac, their use is strictly for educational purposes only under fair usage provisions!
+Copyrights for their respective owners are all reserved.
 
-Read requirements.org
+# Fire Gif
+From https://giphy.com/gifs/fire-gif-qG29LdXVnLM0E
 
-Read this comic http://theoatmeal.com/comics/design_hell
-
-git clone https://github.com/abramhindle/CMPUT404-assignment-css-hell.git
-
-License/Copyright
-=================
-
-Textual content is copyright Abram Hindle (C) 2013 under the CC-BY-SA
-4.0 unported license. Attribution should be a hyperlink to the
-repository and (C) 2013 Abram Hindle visibile in the text.
-
-Code is licensed under the Apache 2.0 license.
-
-
+# Licensed
+Unless otherwise mentioned, code and contented is under CC-BY-NC-ND
+https://creativecommons.org/licenses/by-nc-nd/4.0/
